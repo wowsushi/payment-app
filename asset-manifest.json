@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/payment-app/static/css/main.436d0371.chunk.css",
+    "main.js": "/payment-app/static/js/main.5d32391a.chunk.js",
+    "main.js.map": "/payment-app/static/js/main.5d32391a.chunk.js.map",
+    "runtime~main.js": "/payment-app/static/js/runtime~main.4a6b527f.js",
+    "runtime~main.js.map": "/payment-app/static/js/runtime~main.4a6b527f.js.map",
+    "static/js/2.1230d522.chunk.js": "/payment-app/static/js/2.1230d522.chunk.js",
+    "static/js/2.1230d522.chunk.js.map": "/payment-app/static/js/2.1230d522.chunk.js.map",
+    "index.html": "/payment-app/index.html",
+    "precache-manifest.af0abeccabb0d3c6f54be8cec4bf7901.js": "/payment-app/precache-manifest.af0abeccabb0d3c6f54be8cec4bf7901.js",
+    "service-worker.js": "/payment-app/service-worker.js",
+    "static/css/main.436d0371.chunk.css.map": "/payment-app/static/css/main.436d0371.chunk.css.map"
+  }
+}
