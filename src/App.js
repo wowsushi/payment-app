@@ -35,12 +35,12 @@ const paymentType = [{
     type: 'union',
     title: '銀聯卡 付款',
     content: '支付成功頁面僅為銀聯卡回覆訊息，交易是否完成請需以本商店通知為準',
-    img: '/img/unionpay.png'
+    img: './img/unionpay.png'
   }, {
     type: 'atm',
     title: 'Web ATM 付款',
     content: '網路銀行ATM操作說明',
-    img: '/img/icon_atm.svg'
+    img: './img/icon_atm.svg'
   }
 ]
 
