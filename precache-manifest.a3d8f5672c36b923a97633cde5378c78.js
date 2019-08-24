@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "377c8d810d33c85320d202f08a346567",
+    "revision": "71dbe9c67bd5afa2aa4aec58e3c6d7ff",
     "url": "https://wowsushi.github.io/payment-app/index.html"
   },
   {
-    "revision": "550f5606e7fb283fca57",
-    "url": "https://wowsushi.github.io/payment-app/static/css/main.fca0ec57.chunk.css"
+    "revision": "8c49b6efc814f8b9cf09",
+    "url": "https://wowsushi.github.io/payment-app/static/css/main.feeeb203.chunk.css"
   },
   {
     "revision": "9a12d8d5c7d12d190eaa",
     "url": "https://wowsushi.github.io/payment-app/static/js/2.1230d522.chunk.js"
   },
   {
-    "revision": "550f5606e7fb283fca57",
+    "revision": "8c49b6efc814f8b9cf09",
     "url": "https://wowsushi.github.io/payment-app/static/js/main.e330035b.chunk.js"
   },
   {
