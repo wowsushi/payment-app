@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://wowsushi.github.io/payment-app/static/css/main.3ef136f4.chunk.css",
+    "main.css": "https://wowsushi.github.io/payment-app/static/css/main.fca0ec57.chunk.css",
     "main.js": "https://wowsushi.github.io/payment-app/static/js/main.e330035b.chunk.js",
     "main.js.map": "https://wowsushi.github.io/payment-app/static/js/main.e330035b.chunk.js.map",
     "runtime~main.js": "https://wowsushi.github.io/payment-app/static/js/runtime~main.76b3e6c5.js",
@@ -8,9 +8,9 @@
     "static/js/2.1230d522.chunk.js": "https://wowsushi.github.io/payment-app/static/js/2.1230d522.chunk.js",
     "static/js/2.1230d522.chunk.js.map": "https://wowsushi.github.io/payment-app/static/js/2.1230d522.chunk.js.map",
     "index.html": "https://wowsushi.github.io/payment-app/index.html",
-    "precache-manifest.ea48ed4fca747eb552f3802c730e4a4b.js": "https://wowsushi.github.io/payment-app/precache-manifest.ea48ed4fca747eb552f3802c730e4a4b.js",
+    "precache-manifest.f384c1671b32d22246146a01c0873e03.js": "https://wowsushi.github.io/payment-app/precache-manifest.f384c1671b32d22246146a01c0873e03.js",
     "service-worker.js": "https://wowsushi.github.io/payment-app/service-worker.js",
-    "static/css/main.3ef136f4.chunk.css.map": "https://wowsushi.github.io/payment-app/static/css/main.3ef136f4.chunk.css.map",
+    "static/css/main.fca0ec57.chunk.css.map": "https://wowsushi.github.io/payment-app/static/css/main.fca0ec57.chunk.css.map",
     "static/media/stylesheet.scss": "https://wowsushi.github.io/payment-app/static/media/icon_help.7aaa513a.svg"
   }
 }
