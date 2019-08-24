@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5accccc6430d7483e85217c30e12199c",
+    "revision": "7e0c6cf60a831a0a0bde3941247bc30a",
     "url": "https://wowsushi.github.io/payment-app/index.html"
   },
   {
-    "revision": "f80202d18ed2a244d4b7",
-    "url": "https://wowsushi.github.io/payment-app/static/css/main.df313e62.chunk.css"
+    "revision": "5fae61dd17b929f291ad",
+    "url": "https://wowsushi.github.io/payment-app/static/css/main.3ef136f4.chunk.css"
   },
   {
     "revision": "9a12d8d5c7d12d190eaa",
     "url": "https://wowsushi.github.io/payment-app/static/js/2.1230d522.chunk.js"
   },
   {
-    "revision": "f80202d18ed2a244d4b7",
+    "revision": "5fae61dd17b929f291ad",
     "url": "https://wowsushi.github.io/payment-app/static/js/main.e330035b.chunk.js"
   },
   {
@@ -34,5 +34,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "442aed54059d48cabf87ca7254e5ddb0",
     "url": "https://wowsushi.github.io/payment-app/static/media/icon_confirm_normal.442aed54.svg"
+  },
+  {
+    "revision": "7aaa513aa58b2221c14dad393cbd03e1",
+    "url": "https://wowsushi.github.io/payment-app/static/media/icon_help.7aaa513a.svg"
   }
 ]);

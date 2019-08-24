@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://wowsushi.github.io/payment-app/precache-manifest.4d81e4dd372415e9816645c1b6510c3a.js"
+  "https://wowsushi.github.io/payment-app/precache-manifest.ea48ed4fca747eb552f3802c730e4a4b.js"
 );
 
 self.addEventListener('message', (event) => {
