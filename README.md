@@ -19,7 +19,7 @@
 https://wowsushi.github.io/payment-app/
 
 ## Demo
-???
+![Demo](http://g.recordit.co/dLx3lQsmPe.gif)
 
 ## 如何使用?
 ```

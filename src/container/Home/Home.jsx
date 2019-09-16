@@ -11,7 +11,6 @@ class Home extends React.Component {
     this.props.clearData('selectedPayment')
   }
 
-
   render() {
     const {selectedPayment, selectPayment, handleSubmit, routeProps} = this.props
 
@@ -30,7 +29,7 @@ class Home extends React.Component {
           backward="/"
           handleSubmit={handleSubmit}
           routeProps={routeProps}
-          />
+        />
       </React.Fragment>
     )
   }

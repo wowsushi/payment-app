@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  Switch,
-  Route,
-} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import ProgressBar from './component/ProgressBar'
 import TopBar from './component/TopBar'
@@ -97,10 +94,6 @@ class App extends React.Component{
     this.setState({selectedPayment: newSelect})
   }
 
-  validate = type => e => {
-    this.setState({form: e.target.value})
-  }
-
   handleValueChange = (field, value, type = 'string') => {
     if (type === 'number') {
       value = +value;
@@ -156,7 +149,12 @@ class App extends React.Component{
             if (!value.valid) return
           }
         } else {
-            if (!newForm.name.valid || !newForm.phone.valid || !newForm.email.valid || !newForm.address.valid || !newForm.termConfirm.valid) return
+            if (!newForm.name.valid
+              || !newForm.phone.valid
+              || !newForm.email.valid
+              || !newForm.address.valid
+              || !newForm.termConfirm.valid
+            ) return
         }
         routeProps.history.replace(forward)
         break
@@ -174,8 +172,6 @@ class App extends React.Component{
         console.log('error')
       }
     }
-
-
   }
 
   validateCheck = (field, value) => {
@@ -345,7 +341,6 @@ class App extends React.Component{
               <Home
                 selectedPayment={selectedPayment}
                 selectPayment={this.selectPayment}
-                validate={this.validate}
                 handleSubmit={this.handleSubmit}
                 routeProps={props}
                 clearData={this.clearData}
@@ -359,7 +354,6 @@ class App extends React.Component{
               <ShopPayment
                 selectedPayment={selectedPayment}
                 form={form}
-                validate={this.validate}
                 handleValueChange={this.handleValueChange}
                 routeProps={props}
                 formatCredit={this.formatCredit}
