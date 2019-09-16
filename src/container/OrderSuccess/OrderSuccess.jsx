@@ -1,18 +1,23 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 
 import SuccessMsg from '../../component/SuccessMsg'
 import OrderDetail from '../../component/OrderDetail'
 import Goto from '../../component/Goto'
 
 const OrderSuccess = props => {
-  const { selectedShop, prevPath, handleSubmit, routeProps } = props
+  const { selectedShop, prevPath, handleSubmit, routeProps, history } = props
+  if (!prevPath) {
+    history.replace('/')
+    return null
+  }
 
   return (
     <React.Fragment>
       <SuccessMsg
         header={"訂購成功！"}
         content={"感謝您的訂購，我們將儘速為您出貨！"}
-        />
+      />
       <OrderDetail
         selectedShop={selectedShop}
         prevPath={prevPath}
@@ -30,4 +35,4 @@ const OrderSuccess = props => {
 
 }
 
-export default OrderSuccess
+export default withRouter(OrderSuccess)

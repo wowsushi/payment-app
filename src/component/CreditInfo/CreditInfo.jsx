@@ -25,7 +25,7 @@ const CreditInfo = props => {
              placeholder="0000 0000 0000 0000"
              onChange={(e) => handleValueChange('creditNum', e.target.value)}
              value={creditNum.value.replace(/\s/g,'').replace(/(\d{4})(?=\d)/g,"$1 ")}
-             className={!creditNum.valid && "warning"}
+             className={!creditNum.valid? "warning" : undefined}
            />
            {!creditNum.valid && <span className="invalid-feedback">{creditNum.error}</span>}
          </div>
@@ -37,7 +37,7 @@ const CreditInfo = props => {
              placeholder="MM/YY"
              onChange={(e) => handleValueChange('creditMMYY', e.target.value)}
              value={creditMMYY.value}
-             className={!creditMMYY.valid && "warning"}
+             className={!creditMMYY.valid? "warning" : undefined}
            />
            <div className="mmyy-notice">
              <div className="inner">
@@ -55,7 +55,7 @@ const CreditInfo = props => {
              placeholder="CVV"
              onChange={(e) => handleValueChange('creditCVV', e.target.value)}
              value={creditCVV.value}
-             className={!creditCVV.valid && "warning"}
+             className={!creditCVV.valid? "warning" : undefined}
            />
            <div className="CVV-notice">
              <div className="inner">
@@ -73,7 +73,7 @@ const CreditInfo = props => {
              placeholder="刷卡若採簡訊驗證，將發至您發卡銀行的手機號碼"
              onChange={(e) => handleValueChange('creditPhone', e.target.value)}
              value={creditPhone.value}
-             className={!creditPhone.valid && "warning"}
+             className={!creditPhone.valid? "warning" : undefined}
            />
            {!creditPhone.valid && <span className="invalid-feedback">{creditPhone.error}</span>}
          </div>

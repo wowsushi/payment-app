@@ -19,7 +19,17 @@ class ShopPayment extends React.Component {
   }
 
   render() {
-    const { selectedPayment, form, validate, handleValueChange, routeProps, formatCredit, selectedShop, selectShop, form: {termConfirm}, handleSubmit } = this.props
+    const {
+      selectedPayment,
+      form,
+      handleValueChange,
+      routeProps,
+      formatCredit,
+      selectedShop,
+      selectShop,
+      form: {termConfirm},
+      handleSubmit
+    } = this.props
 
     return (
       <React.Fragment>
@@ -29,54 +39,53 @@ class ShopPayment extends React.Component {
           routeProps={routeProps}
         />
         <form>
-        <Route
-          path="/checkOut/shop"
-          render={props => (
-            <ShopInfo
-              selectedShop={selectedShop}
-              selectShop={selectShop}
-            />
-          )}
-        />
-        <Route path="/checkOut/atm" component={AtmInfo}/>
-        <Route
-          path="/checkOut/credit"
-          render={props => (
-            <CreditInfo
-               form={form}
-               handleValueChange={handleValueChange}
-               formatCredit={formatCredit}
-            />
-          )}
-        />
-        <BuyerInfo
-          vlaidate={validate}
-          form={form}
-          handleValueChange={handleValueChange}
-        />
-        <ReceiverInfo />
-        <RemarksPanel
-          remarks={
-            remarks
-              .slice(0,1)
-              .concat(remarks.slice(
-              3, remarks.length
-            ))}
+          <Route
+            path="/checkOut/shop"
+            render={props => (
+              <ShopInfo
+                selectedShop={selectedShop}
+                selectShop={selectShop}
+              />
+            )}
           />
-         <div className="form-row">
-             <input
-               type="checkbox"
-               id="termConfirm"
-               onChange={(e) => handleValueChange('termConfirm', e.target.checked)}
-             />
-             <label htmlFor="termConfirm" className="termConfirm">確認，我已暸解</label>
-             {!termConfirm.valid && <span className="invalid-feedback">{termConfirm.error}</span>}
-        </div>
-        <Goto
-          forward="/orderSuccess"
-          backward="/"
-          handleSubmit={handleSubmit}
-          routeProps={routeProps}
+          <Route path="/checkOut/atm" component={AtmInfo}/>
+          <Route
+            path="/checkOut/credit"
+            render={props => (
+              <CreditInfo
+                form={form}
+                handleValueChange={handleValueChange}
+                formatCredit={formatCredit}
+              />
+            )}
+          />
+          <BuyerInfo
+            form={form}
+            handleValueChange={handleValueChange}
+          />
+          <ReceiverInfo />
+          <RemarksPanel
+            remarks={
+              remarks
+                .slice(0,1)
+                .concat(remarks.slice(
+                3, remarks.length
+              ))}
+            />
+          <div className="form-row">
+              <input
+                type="checkbox"
+                id="termConfirm"
+                onChange={(e) => handleValueChange('termConfirm', e.target.checked)}
+              />
+              <label htmlFor="termConfirm" className="termConfirm">確認，我已暸解</label>
+              {!termConfirm.valid && <span className="invalid-feedback">{termConfirm.error}</span>}
+          </div>
+          <Goto
+            forward="/orderSuccess"
+            backward="/"
+            handleSubmit={handleSubmit}
+            routeProps={routeProps}
           />
         </form>
       </React.Fragment>

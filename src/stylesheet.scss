@@ -17,12 +17,6 @@ $font-size-lg: 1.17rem;
 $font-size-xl: 2.25rem;
 $font-size-bold: 1.5rem;
 
-/* default setting */
-// #root * {
-//   border: 1px black solid;
-// }
-
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -59,8 +53,8 @@ button {
   justify-content: center;
 
   img {
-    margin: 1rem .5rem;
     width: 1rem;
+    margin: 1rem .5rem;
   }
 }
 
@@ -74,11 +68,11 @@ a:link {
   color: $main-color;
   text-decoration: none;
 }
+
 a:visited {
   color: $main-color;
 }
 
-/* start */
 .app {
   display: flex;
   flex-flow: column nowrap;
@@ -132,19 +126,19 @@ a:visited {
       &:before {
         content: "";
         position: absolute;
-        height: 1.5rem;
-        width: 1.5rem;
-        left: -1.8rem;
         top: -2px;
+        left: -1.8rem;
+        width: 1.5rem;
+        height: 1.5rem;
         background-image: url(./img/icon_confirm_normal.svg);
     }
   }
 
   [type="checkbox"]:checked {
     + label:before {
-      height: 1.5rem;
-      width: 1.5rem;
       left: -1.8rem;
+      width: 1.5rem;
+      height: 1.5rem;
       background-image: url(./img/icon_confirm.svg);
     }
   }
@@ -223,9 +217,9 @@ a:visited {
     }
 
     .order-title {
+      grid-area: title;
       justify-content: center;
       flex-flow: column;
-      grid-area: title;
 
       span:nth-child(1) {
        font-size: $font-size-xl;
@@ -274,7 +268,6 @@ a:visited {
       background: $bg-color-light;
     }
 
-
     input:checked + label {
       border-color: $main-color;
       background: $bg-color-light;
@@ -286,10 +279,9 @@ a:visited {
 
     [type=radio],
     [type=checkbox] {
-        --webkit-appearance: none;
-        position: absolute;
-        opacity: 0;
-
+      --webkit-appearance: none;
+      position: absolute;
+      opacity: 0;
     }
 
     label {
@@ -300,8 +292,8 @@ a:visited {
       grid-column-gap: 1rem;
       grid-template-columns: 1.5rem 75px auto;
       align-items: center;
-      padding: 1rem;
       width: 100%;
+      padding: 1rem;
       border: 1px $line-color-dark solid;
       border-radius: 4px;
       cursor: pointer;
@@ -311,7 +303,6 @@ a:visited {
         width: 1.5rem;
         height: 1.5rem;
         background-image: url(./img/icon_confirm_normal.svg)
-
       }
 
       img {
@@ -341,8 +332,8 @@ a:visited {
 
 .remarks-panel {
   position: relative;
-  padding-right: 1rem;
   width: 100%;
+  padding-right: 1rem;
   color: $font-color-light;
   line-height: 1.7rem;
   font-size: .75rem;
@@ -388,8 +379,8 @@ a:visited {
 
   img {
     grid-area: img;
-    margin: 0 1rem;
     width: 2rem;
+    margin: 0 1rem;
   }
 
   h3 {
@@ -407,8 +398,8 @@ a:visited {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  padding: 0 .5rem;
   width: 100%;
+  padding: 0 .5rem;
 
   .shop-title-bar {
     .shop-title {
@@ -517,7 +508,6 @@ a:visited {
 
     > div {
       padding: 1rem 0;
-
     }
 
     .shop-name {
@@ -539,9 +529,10 @@ a:visited {
       .shop-save {
         display: flex;
         align-items: center;
-          img {
-            margin-right: .3rem;
-          }
+
+        img {
+          margin-right: .3rem;
+        }
       }
     }
   }
@@ -570,15 +561,14 @@ a:visited {
     position: relative;
     margin-bottom: 1.5rem;
 
-    span {
+    .invalid-feedback {
       position: absolute;
-      left: 0rem;
       bottom: -.6rem;
+      left: 0rem;
     }
 
-
     #post {
-      width: auto;
+      width: 20%;
     }
   }
 
@@ -592,9 +582,9 @@ a:visited {
 
   input,
   select {
+    height: 2.5rem;
     padding: 0 .5rem;
     margin-bottom: .5rem;
-    height: 2.5rem;
     border: 2px $line-color-dark solid;
     border-radius: 4px;
 
@@ -622,30 +612,30 @@ a:visited {
   }
 
   [type="checkbox"] + label {
-      position: relative;
-      width: auto;
-      display: inline-block;
-      margin-left: 2.5rem;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin-left: 2.5rem;
 
-      &:before {
-        content: "";
-        position: absolute;
-        height: 1.5rem;
-        width: 1.5rem;
-        left: -1.8rem;
-        top: 0.3rem;
-        background-image: url(./img/icon_confirm_normal.svg);
-      }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0.3rem;
+      left: -1.8rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: url(./img/icon_confirm_normal.svg);
+    }
 
-      &:after {
-          content: "";
-          position: absolute;
-          height: 1.5rem;
-          width: 1.5rem;
-          right: -1.8rem;
-          top: 0.3rem;
-          background-image: url(./img/icon_arrow_down.svg);
-      }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0.3rem;
+      right: -1.8rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: url(./img/icon_arrow_down.svg);
+    }
   }
 
   [type="checkbox"]:checked {
@@ -686,8 +676,8 @@ a:visited {
   }
 
   ul, li {
-    list-style: disc;
     margin-left: 1rem;
+    list-style: disc;
     color: $font-color-light;
   }
 
@@ -701,11 +691,11 @@ a:visited {
 
   .mmyy-notice,
   .CVV-notice {
+    position: absolute;
+    top: 2.7rem;
     width: 1.5rem;
     height: 1.5rem;
     background-image: url(./img/icon_help.svg);
-    position: absolute;
-    top: 2.7rem;
 
     &:hover {
       .inner {
@@ -715,23 +705,23 @@ a:visited {
 
     .inner {
       display: none;
+      position: relative;
+      top: -101px;
+      left: calc(50% - 194px);
       align-items: center;
       width: 216px;
       height: 85px;
+      padding: .8rem .5rem;
       background: $bg-color-light;
       border: 1px #E4E7ED solid;
       border-radius: 4px;
-      position: relative;
-      left: calc(50% - 194px);
-      padding: .8rem .5rem;
-      top: -101px;
 
 
       &:after {
         content: '';
         position: absolute;
-        bottom: -12px;
         right: 9px;
+        bottom: -12px;
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
         border-top: 12px solid $bg-color-light;
@@ -740,8 +730,8 @@ a:visited {
       &:before {
         content: '';
         position: absolute;
-        bottom: -13px;
         right: 8px;
+        bottom: -13px;
         border-left: 13px solid transparent;
         border-right: 13px solid transparent;
         border-top: 13px solid $line-color-light;
@@ -772,10 +762,10 @@ a:visited {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  max-width: 552px;
   margin: 3rem .5rem 0 .5rem;
   color: $font-color-normal;
   line-height: 1.5;
-  max-width: 552px;
 }
 
 .order-detail {
@@ -790,8 +780,8 @@ a:visited {
 
   table {
     width: 100%;
-    border-collapse: collapse;
     margin-bottom: 2rem;
+    border-collapse: collapse;
   }
 
   table:last-child {
@@ -852,8 +842,8 @@ a:visited {
 
 @media screen and (min-width: 858px) {
   .app > form {
-    max-width: 820px;
     width: 100%;
+    max-width: 820px;
   }
 
   .banner,
@@ -874,16 +864,15 @@ a:visited {
      position: relative;
      top: 1.7rem;
      padding: 0 2rem;
-    li {
-      &:nth-of-type(n) h4 {
-      display: block;
 
-      }
+    li:nth-of-type(n) h4 {
+      display: block;
     }
   }
 
   .order-panel {
     padding: 0 6%;
+
     .inner-wrapper {
       display: flex;
       justify-content: flex-end;
@@ -906,8 +895,8 @@ a:visited {
       }
 
       .order-title {
-        border-left: 2px white solid;
         padding-left: 1rem;
+        border-left: 2px white solid;
       }
     }
   }
@@ -945,60 +934,72 @@ a:visited {
   .buyer-info,
   .receiver-info,
   .atm-info{
+    .detail {
+      display: grid;
+      grid-template-areas:
+      "name phone"
+      "address address"
+      "email email";
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+
     .form-row {
-      &:nth-of-type(1),
-      &:nth-of-type(2) {
-        display: inline-block;
-        width: 50%;
-      }
+      display: flex;
+      margin-bottom: unset;
 
       &:nth-of-type(1) {
-        input,
-        select {
-          width: 75%;
+        grid-area: name;
+
+        input:nth-of-type(1) {
+          width: calc(100% - 5rem);
         }
       }
 
       &:nth-of-type(2) {
+        grid-area: phone;
+
         select {
-          margin-right: 1rem;
+          margin-right: 5%;
         }
 
-        input {
-          width: 58%;
+        input:nth-of-type(1) {
+          width: calc(95% - 5rem);
         }
-      }
-
-      &:nth-of-type(3),
-      &:nth-of-type(4){
-        width: 100%;
       }
 
       &:nth-of-type(3) {
-        input {
-          width: 56.3%;
+        grid-area: address;
+
+        #post {
+          width: calc(20% - 1rem)
+        }
+
+        input:nth-of-type(2) {
+          width: calc(80% - 4rem);
         }
       }
 
       &:nth-of-type(4) {
+        grid-area: email;
+
         input {
-          width: 89.8%;
+          width: calc(100% - 4rem);
         }
       }
 
       .invalid-feedback {
-        left: 5rem;
+        left: 4rem;
       }
 
       .address {
-        left: 21.5rem;;
+        left: 14rem;;
       }
     }
 
     label {
       display: inline-block;
       width: 4rem;
-      margin-right: 1rem;
     }
 
     #post {
@@ -1069,8 +1070,11 @@ a:visited {
       width: 4rem;
       margin-right: 1rem;
     }
-  }
 
+    .form-row .invalid-feedback {
+      left: 5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 950px) {

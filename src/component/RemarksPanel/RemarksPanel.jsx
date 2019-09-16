@@ -9,7 +9,11 @@ const RemarksPanel = props => {
 
     if (targetPos > 1) {
       remarkList.push(
-        <li key={index}>{remark.slice(0, targetPos) }{<a href="/">「購買說明」</a>}{remark.slice(targetPos + 6, remark.length)}</li>
+        <li key={index}>
+          {remark.slice(0, targetPos) }
+          {<a href="/">「購買說明」</a>}
+          {remark.slice(targetPos + 6, remark.length)}
+        </li>
       )
     } else {
       remarkList.push(

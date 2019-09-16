@@ -25,10 +25,7 @@ const ShopInfo = props => {
               className="dropdown-item"
               onClick={e => selectShop(e)}
             >
-              <ul
-                className="inner"
-
-              >
+              <ul className="inner">
                 <li>
                   <h4>南山</h4>
                   <p>台北市大安區復興路999段99號1巷</p>
@@ -48,7 +45,7 @@ const ShopInfo = props => {
               content="選擇常用門市"
               className="font-color-primary"
               img="./img/icon_like.svg"
-              />
+            />
           </div>
         </div>
       </div>
